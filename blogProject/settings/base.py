@@ -15,6 +15,7 @@ env = environ.Env(
 )
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
+SECURE_SSL_REDIRECT = True
 
 
 # AUTH_USER_MODEL = 'accounts.User'
