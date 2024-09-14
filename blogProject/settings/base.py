@@ -41,14 +41,14 @@ INSTALLED_APPS = [
     # django-rest-framework
     'rest_framework',
     'rest_framework.authtoken',
-    'rest_auth',
+    #'rest_auth',
 
     # django-allauth
     'django.contrib.sites',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'rest_auth.registration',
+    #'allauth',
+    #'allauth.account',
+    #'allauth.socialaccount',
+    #'rest_auth.registration',
     
     'rest_framework_simplejwt',
     
@@ -91,6 +91,9 @@ MIDDLEWARE = [
 # cors 
 CORS_ORIGIN_ALLOW_ALL=True
 CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOWED_ORIGINS = [
+    "*"
+]
 CORS_ALLOW_METHODS = ( 
     'DELETE',
     'GET',
