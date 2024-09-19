@@ -16,7 +16,6 @@ env = environ.Env(
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 
-
 # AUTH_USER_MODEL = 'accounts.User'
 
 # Quick-start development settings - unsuitable for production
